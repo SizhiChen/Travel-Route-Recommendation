@@ -1,4 +1,5 @@
 # SearchUI.py
+import webbrowser
 from tkinter import messagebox
 from main import gmaps
 from StartPlaceSelector import StartPlaceSelector
@@ -356,8 +357,9 @@ class SearchUI:
         duration_matrix = get_distance_matrix(tsp_places)
         tour = tsp(duration_matrix, self.start_point)
         url = get_route_url(tour)
-        webview.create_window("Map Viewer", url, width=1500, height=1000)
-        webview.start()
+        webbrowser.open(url)
+        # webview.create_window("Map Viewer", url, width=1500, height=1000)
+        # webview.start()
 
     def set_start_point(self, selected_name):
         self.start_point = selected_name
