@@ -1,0 +1,18 @@
+# Core dependencies for Travel Route Recommendation System
+
+# Google Maps API client
+googlemaps>=4.10.0
+
+# Data manipulation and analysis
+pandas>=1.5.0
+
+# Modern GUI framework
+ttkbootstrap>=1.10.0
+
+# Web browser integration
+pywebview>=4.0.0
+
+# Standard library dependencies (included with Python)
+# tkinter - GUI framework (built-in)
+# webbrowser - Web browser control (built-in)
+# messagebox - Dialog boxes (built-in)
