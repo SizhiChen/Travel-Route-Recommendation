@@ -12,6 +12,9 @@ ttkbootstrap>=1.10.0
 # Web browser integration
 pywebview>=4.0.0
 
+# Environment variable management
+python-dotenv>=1.0.0
+
 # Standard library dependencies (included with Python)
 # tkinter - GUI framework (built-in)
 # webbrowser - Web browser control (built-in)

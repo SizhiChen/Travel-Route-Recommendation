@@ -60,10 +60,12 @@ This application provides an intelligent travel planning solution that:
 3. **Configure API Key**
    - Get a Google Maps API key from [Google Cloud Console](https://console.cloud.google.com/)
    - Enable the required APIs (Places, Directions, Geocoding)
-   - Replace the API key in `main.py`:
-     ```python
-     API_KEY = 'your_google_maps_api_key_here'
+   - Create a `.env` file in the project root directory
+   - Add your API key to the `.env` file:
      ```
+     GOOGLE_MAPS_API_KEY=your_actual_api_key_here
+     ```
+   - **Important**: Never commit your `.env` file to version control
 
 4. **Run the application**
    ```bash
@@ -111,6 +113,8 @@ Travel-Route-Recommendation/
 ├── attractions_rating.py       # Attraction data processing
 ├── vancouver_attractions_sorted.csv  # Attraction database
 ├── requirements.txt            # Python dependencies
+├── .env                        # Environment variables (API keys)
+├── .gitignore                  # Git ignore rules
 └── README.md                   # This file
 ```
 
@@ -179,7 +183,8 @@ Travel-Route-Recommendation/
 ## 🔒 Security & Privacy
 
 ### API Key Management
-- Store API keys securely
+- API keys are stored securely in `.env` files
+- `.env` files are excluded from version control via `.gitignore`
 - Never commit API keys to version control
 - Use environment variables for production deployment
 
