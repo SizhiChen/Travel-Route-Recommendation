@@ -4,7 +4,7 @@ import googlemaps
 import pandas as pd
 
 # Google API key Setup
-API_KEY = 'AIzaSyCNZYM6WqJTY8Dd4Sis_4s36R5WIKSO2dQ'
+API_KEY = ''
 gmaps = googlemaps.Client(key=API_KEY)
 
 # Get the Rating dataFrame
